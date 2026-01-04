@@ -27,13 +27,13 @@ public class UserController {
         );
     }
 
-    @PutMapping("/me")
-    public ResponseEntity<ApiResponse<UserProfileResponse>> updateMe(
-            @Valid @RequestBody UserUpdateRequest request) {
-
-        return ResponseEntity.ok(
-                ApiResponse.ok("Profile updated", userService.updateCurrentUserProfile(request))
-        );
-    }
+////    @PutMapping("/me")
+////    public ResponseEntity<ApiResponse<UserProfileResponse>> updateMe(
+////            @Valid @RequestBody UserUpdateRequest request) {
+////
+////        return ResponseEntity.ok(
+////                ApiResponse.ok("Profile updated", userService.updateCurrentUserProfile(request))
+////        );
+//    }
 
 }
